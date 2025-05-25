@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="./main.css">
 </head>
+
 <body>
-    
+
+    <center>
+        <select class="statusSearch">
+            <option value="all">All</option>
+            <option value="active">Active</option>
+            <option value="inactive">Inctive</option>
+        </select>
+        <input type="text" class="inpSearch" placeholder="Search...">
+        <button class="btnNewUser">New User</button>
+        <button class="btnSort">Sort</button>
+    </center>
+
+    <dialog class="addDialog">
+        <input type="text" placeholder="Name" class="addName">
+    </dialog>
+
+    <div class="box"></div>
+    <script type="module" src="./main.js"></script>
 </body>
+
 </html>
