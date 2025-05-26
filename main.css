@@ -1,9 +1,11 @@
 * {
     margin: 0;
 }
-center{
+
+center {
     padding: 20px;
 }
+
 .box {
     width: 80%;
     margin: auto;
@@ -20,36 +22,56 @@ center{
     border-radius: 10px;
 }
 
-.divTheme{
-    position: absolute  ;
+.divTheme {
+    position: absolute;
     margin: 20px;
 }
 
-dialog{
+dialog {
     margin: auto;
     width: 300px;
     padding: 20px;
     border: none;
     border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
 }
 
-.pStatus{
+.pStatus {
     padding: 2px 8px;
     border-radius: 5px;
     margin: 10px 0px;
 }
 
-.image{
+.image {
     width: 100%;
     height: 200px;
-    
+
 }
 
-button{
+button {
     margin: 2px;
 }
 
-.check{
+.check {
     width: 15px;
     height: 15px;
+}
+
+@media (max-width:640px) {
+    .divTheme{
+        position: sticky;
+    }
+    .inpSearch{
+        width: 100px;
+    }
+    .box{
+        gap: 15px;
+        width: 90%;
+    }
+    .div{
+        width: 40%;
+        padding: 10px;
+    }
+
 }
