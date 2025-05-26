@@ -10,8 +10,11 @@
 
 </head>
 
-<body>
-
+<body class="body">
+    <div class="divTheme">
+        <button class="dark">Dark</button>
+        <button class="light">Light</button>
+    </div>
     <center>
         <select class="statusSearch">
             <option value="all">All</option>
@@ -24,9 +27,48 @@
     </center>
 
     <dialog class="addDialog">
-        <input type="text" placeholder="Name" class="addName">
-        <input type="text" placeholder="Name" class="addName">
-        <input type="text" placeholder="Name" class="addName">
+        <form class="addForm">
+            <label for="addImage">Image:</label><br>
+            <input type="text" placeholder="URL to IMAGE" name="addImage" id="addImage"><br><br>
+            <label for="addName">Name:</label><br>
+            <input type="text" placeholder="Name" name="addName" id="addName"><br><br>
+            <label for="addAge">Age:</label><br>
+            <input type="text" placeholder="Age" name="addAge" id="addAge"><br><br>
+            <label for="addStatus">Status:</label><br>
+            <select name="addStatus" id="addStatus">
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+            </select><br><br>
+            <button>Save</button>
+            <button class="btnaddClose">Cancel</button>
+        </form>
+    </dialog>
+
+    <dialog class="editDialog">
+        <form class="editForm">
+            <label for="editImage">Image:</label><br>
+            <input type="text" placeholder="URL to IMAGE" name="editImage" id="editImage"><br><br>
+            <label for="editName">Name:</label><br>
+            <input type="text" placeholder="Name" name="editName" id="editName"><br><br>
+            <label for="editAge">Age:</label><br>
+            <input type="text" placeholder="Age" name="editAge" id="editAge"><br><br>
+            <label for="editStatus">Status:</label><br>
+            <select name="editStatus" id="editStatus">
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+            </select><br><br>
+            <button>Save</button>
+            <button class="btneditClose">Cancel</button>
+        </form>
+    </dialog>
+
+    <dialog class="infoDialog">
+        <img src="" style="width: 100%;" class="infoImage"></img>
+        <p class="infoName"></p>
+        <p class="infoAge"></p>
+        <p class="infoStatus"></p>
+        <p class="infoId"></p>
+        <button class="btninfoClose">Cancel</button>
     </dialog>
 
     <div class="box"></div>
